@@ -71,7 +71,7 @@ def play(song_list) #takes in song array as arguments
   
   song_list.each_with_index do |song, index|
     if user_input == song || user_input == (index + 1).to_s 
-      return "Playing #{song}"
+      puts "Playing #{song}"
     end
   end
   return "Invalid input, please try again"
